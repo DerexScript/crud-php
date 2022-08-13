@@ -1,0 +1,19 @@
+{
+    "name": "derex/crud_php",
+    "description": "CRUD PHP BEST PRACTICE",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Derex\\CrudPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Derex",
+            "email": "Derex@outlook.com.br"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
