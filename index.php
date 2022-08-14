@@ -96,7 +96,7 @@
       <div class="row">
         <div class="col-12">
           <ul class="list-unstyled">
-            <li class="text-white"><a class="text-decoration-none link-light" href="https://github.com/DerexScript/" target="_blank">Repositório do
+            <li class="text-white"><a class="text-decoration-none link-light" href="https://github.com/DerexScript/crud-php" target="_blank">Repositório do
                 projeto</a></li>
           </ul>
         </div>
