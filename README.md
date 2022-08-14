@@ -1,13 +1,5 @@
 # crud-php
 
-<!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
-
-![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/iuricode/README-template?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/iuricode/README-template?style=for-the-badge)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/iuricode/README-template?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iuricode/README-template?style=for-the-badge)
-
 <img src="https://media.giphy.com/media/B5ds3Kj1faaXRGKn1y/giphy.gif" alt="crud-with-php">
 
 > um simples crud feito com as seguintes tecnologias: php, mariadb e bootstrap.
@@ -15,7 +7,7 @@
 ## 💻 Pré-requisitos
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
-<!---Estes são apenas requisitos de exemplo. Adicionar, duplicar ou remover conforme necessário--->
+
 * Você instalou a versão mais recente do `php e mariadb`
 
 ## ☕ Usando crud-php
@@ -30,7 +22,7 @@ configure com os dados do seu banco de dados e pronto.
 Adicione comandos de execução e exemplos que você acha que os usuários acharão úteis. Fornece uma referência de opções para pontos de bônus!
 
 ## 📫 Contribuindo para crud-php
-<!---Se o seu README for longo ou se você tiver algum processo ou etapas específicas que deseja que os contribuidores sigam, considere a criação de um arquivo CONTRIBUTING.md separado--->
+
 Para contribuir com crud-php, siga estas etapas:
 
 1. Bifurque este repositório.

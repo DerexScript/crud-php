@@ -79,23 +79,23 @@
                                 <tbody>
                                     <?php foreach ($person as $key => $people) : ?>
                                         <tr>
-                                            <th scope="row"><?php echo $people->id; ?></th>
-                                            <td><?php echo $people->name; ?></td>
-                                            <td><?php echo $people->surname; ?></td>
-                                            <td><?php echo $people->email; ?></td>
-                                            <td><?php echo $people->telphone; ?></td>
-                                            <td><?php echo $people->login; ?></td>
-                                            <td><?php echo $people->birth_date; ?></td>
-                                            <td><?php echo $people->cpf; ?></td>
-                                            <td><?php echo $people->gender; ?></td>
-                                            <td><?php echo $people->mother_name; ?></td>
-                                            <td><?php echo $people->father_name; ?></td>
-                                            <td><?php echo $people->address; ?></td>
-                                            <td><?php echo $people->address_number; ?></td>
-                                            <td><?php echo $people->district; ?></td>
-                                            <td><?php echo $people->city; ?></td>
-                                            <td><?php echo $people->state; ?></td>
-                                            <td><?php echo $people->zip_code; ?></td>
+                                            <th scope="row"><?php echo htmlspecialchars($people->id, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></th>
+                                            <td><?php echo htmlspecialchars($people->name, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
+                                            <td><?php echo htmlspecialchars($people->surname, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
+                                            <td><?php echo htmlspecialchars($people->email, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
+                                            <td><?php echo htmlspecialchars($people->telphone, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
+                                            <td><?php echo htmlspecialchars($people->login, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
+                                            <td><?php echo htmlspecialchars($people->birth_date, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
+                                            <td><?php echo htmlspecialchars($people->cpf, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
+                                            <td><?php echo htmlspecialchars($people->gender, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
+                                            <td><?php echo htmlspecialchars($people->mother_name, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
+                                            <td><?php echo htmlspecialchars($people->father_name, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
+                                            <td><?php echo htmlspecialchars($people->address, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
+                                            <td><?php echo htmlspecialchars($people->address_number, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
+                                            <td><?php echo htmlspecialchars($people->district, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
+                                            <td><?php echo htmlspecialchars($people->city, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
+                                            <td><?php echo htmlspecialchars($people->state, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
+                                            <td><?php echo htmlspecialchars($people->zip_code, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
                                         </tr>
                                     <?php endforeach; ?>
                                 </tbody>

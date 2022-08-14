@@ -81,25 +81,25 @@
                                     <?php foreach ($person as $key => $people) : ?>
                                         <tr>
                                             <th scope="row">
-                                                <a href="./update.php?id=<?php echo $people->id; ?>&action=update"><button type="button" class="btn btn-outline-primary">Editar</button></a>
+                                                <a href="./update.php?id=<?php echo htmlspecialchars($people->id, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?>&action=update"><button type="button" class="btn btn-outline-primary">Editar</button></a>
                                             </th>
-                                            <td><?php echo $people->id; ?></td>
-                                            <td><?php echo $people->name; ?></td>
-                                            <td><?php echo $people->surname; ?></td>
-                                            <td><?php echo $people->email; ?></td>
-                                            <td><?php echo $people->telphone; ?></td>
-                                            <td><?php echo $people->login; ?></td>
-                                            <td><?php echo $people->birth_date; ?></td>
-                                            <td><?php echo $people->cpf; ?></td>
-                                            <td><?php echo $people->gender; ?></td>
-                                            <td><?php echo $people->mother_name; ?></td>
-                                            <td><?php echo $people->father_name; ?></td>
-                                            <td><?php echo $people->address; ?></td>
-                                            <td><?php echo $people->address_number; ?></td>
-                                            <td><?php echo $people->district; ?></td>
-                                            <td><?php echo $people->city; ?></td>
-                                            <td><?php echo $people->state; ?></td>
-                                            <td><?php echo $people->zip_code; ?></td>
+                                            <td><?php echo htmlspecialchars($people->id, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
+                                            <td><?php echo htmlspecialchars($people->name, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
+                                            <td><?php echo htmlspecialchars($people->surname, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
+                                            <td><?php echo htmlspecialchars($people->email, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
+                                            <td><?php echo htmlspecialchars($people->telphone, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
+                                            <td><?php echo htmlspecialchars($people->login, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
+                                            <td><?php echo htmlspecialchars($people->birth_date, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
+                                            <td><?php echo htmlspecialchars($people->cpf, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
+                                            <td><?php echo htmlspecialchars($people->gender, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
+                                            <td><?php echo htmlspecialchars($people->mother_name, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
+                                            <td><?php echo htmlspecialchars($people->father_name, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
+                                            <td><?php echo htmlspecialchars($people->address, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
+                                            <td><?php echo htmlspecialchars($people->address_number, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
+                                            <td><?php echo htmlspecialchars($people->district, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
+                                            <td><?php echo htmlspecialchars($people->city, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
+                                            <td><?php echo htmlspecialchars($people->state, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
+                                            <td><?php echo htmlspecialchars($people->zip_code, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?></td>
                                         </tr>
                                     <?php endforeach; ?>
                                 </tbody>
@@ -109,69 +109,69 @@
                         <form class="row mt-1" action="./src/CRUD/update.php" method="POST">
                             <div class="mb-3 col-md-6">
                                 <label for="inputName" class="form-label text-white">Nome</label>
-                                <input type="text" class="form-control" id="inputName" name="name" value="<?php echo $people->name; ?>" required>
+                                <input type="text" class="form-control" id="inputName" name="name" value="<?php echo htmlspecialchars($people->name, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?>" required>
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label for="inputSurname" class="form-label text-white">Sobrenome</label>
-                                <input type="text" class="form-control" id="inputSurname" name="surname" value="<?php echo $people->surname; ?>" required>
+                                <input type="text" class="form-control" id="inputSurname" name="surname" value="<?php echo htmlspecialchars($people->surname, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?>" required>
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label for="inputEmail" class="form-label text-white">E-mail</label>
-                                <input type="text" class="form-control" id="inputEmail" name="email" value="<?php echo $people->email; ?>" required>
+                                <input type="text" class="form-control" id="inputEmail" name="email" value="<?php echo htmlspecialchars($people->email, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?>" required>
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label for="inputTelphone" class="form-label text-white">Telefone</label>
-                                <input type="text" class="form-control" id="inputTelphone" name="telphone" value="<?php echo $people->telphone; ?>" required>
+                                <input type="text" class="form-control" id="inputTelphone" name="telphone" value="<?php echo htmlspecialchars($people->telphone, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?>" required>
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label for="inputLogin" class="form-label text-white">Login</label>
-                                <input type="text" class="form-control" id="inputLogin" name="login" value="<?php echo $people->login; ?>" required>
+                                <input type="text" class="form-control" id="inputLogin" name="login" value="<?php echo htmlspecialchars($people->login, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?>" required>
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label for="inputBirthDate" class="form-label text-white">Data de nascimento</label>
-                                <input type="text" class="form-control" id="inputBirthDate" name="birthDate" value="<?php echo $people->birth_date; ?>" required>
+                                <input type="text" class="form-control" id="inputBirthDate" name="birthDate" value="<?php echo htmlspecialchars($people->birth_date, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?>" required>
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label for="inputCPF" class="form-label text-white">CPF</label>
-                                <input type="text" class="form-control" id="inputCPF" name="cpf" value="<?php echo $people->cpf; ?>" required>
+                                <input type="text" class="form-control" id="inputCPF" name="cpf" value="<?php echo htmlspecialchars($people->cpf, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?>" required>
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label for="inputGender" class="form-label text-white">Sexo</label>
-                                <input type="text" class="form-control" id="inputGender" name="gender" value="<?php echo $people->gender; ?>" required>
+                                <input type="text" class="form-control" id="inputGender" name="gender" value="<?php echo htmlspecialchars($people->gender, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?>" required>
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label for="inputMotherName" class="form-label text-white">Nome da mãe</label>
-                                <input type="text" class="form-control" id="inputMotherName" name="motherName" value="<?php echo $people->mother_name; ?>" required>
+                                <input type="text" class="form-control" id="inputMotherName" name="motherName" value="<?php echo htmlspecialchars($people->mother_name, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?>" required>
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label for="inputFatherName" class="form-label text-white">Nome do pai</label>
-                                <input type="text" class="form-control" id="inputFatherName" name="fatherName" value="<?php echo $people->father_name; ?>" required>
+                                <input type="text" class="form-control" id="inputFatherName" name="fatherName" value="<?php echo htmlspecialchars($people->father_name, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?>" required>
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label for="inputAddress" class="form-label text-white">Endereço</label>
-                                <input type="text" class="form-control" id="inputAddress" name="address" value="<?php echo $people->address; ?>" required>
+                                <input type="text" class="form-control" id="inputAddress" name="address" value="<?php echo htmlspecialchars($people->address, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?>" required>
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label for="inputAddressNumber" class="form-label text-white">Numero da casa</label>
-                                <input type="text" class="form-control" id="inputAddressNumber" name="addressNumber" value="<?php echo $people->address_number; ?>" required>
+                                <input type="text" class="form-control" id="inputAddressNumber" name="addressNumber" value="<?php echo htmlspecialchars($people->address_number, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?>" required>
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label for="inputDistrict" class="form-label text-white">Bairro</label>
-                                <input type="text" class="form-control" id="inputDistrict" name="district" value="<?php echo $people->district; ?>" required>
+                                <input type="text" class="form-control" id="inputDistrict" name="district" value="<?php echo htmlspecialchars($people->district, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?>" required>
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label for="inputCity" class="form-label text-white">Cidade</label>
-                                <input type="text" class="form-control" id="inputCity" name="city" value="<?php echo $people->city; ?>" required>
+                                <input type="text" class="form-control" id="inputCity" name="city" value="<?php echo htmlspecialchars($people->city, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?>" required>
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label for="inputState" class="form-label text-white">Estado</label>
-                                <input type="text" class="form-control" id="inputState" name="state" value="<?php echo $people->state; ?>" required>
+                                <input type="text" class="form-control" id="inputState" name="state" value="<?php echo htmlspecialchars($people->state, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?>" required>
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label for="inputZipCode" class="form-label text-white">CEP</label>
-                                <input type="text" class="form-control" id="inputZipCode" name="zipCode" value="<?php echo $people->zip_code; ?>" required>
+                                <input type="text" class="form-control" id="inputZipCode" name="zipCode" value="<?php echo htmlspecialchars($people->zip_code, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?>" required>
                             </div>
-                            <input type="hidden" class="form-control" id="inputID" name="id" value="<?php echo $people->id; ?>" required>
+                            <input type="hidden" class="form-control" id="inputID" name="id" value="<?php echo htmlspecialchars($people->id, ENT_QUOTES | ENT_HTML5, 'UTF-8'); ?>" required>
                             <div class="d-grid gap-2">
                                 <button class="btn btn-outline-primary" type="submit">Atualizar</button>
                             </div>
